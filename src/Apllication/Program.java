@@ -38,6 +38,15 @@ public class Program {
 		System.out.println("Inser! new id " + newSeller.getId());;
       
 		
+		System.out.println("\n== teste 5: seller Update ===");
+		seller = sellerDao.findById(1);
+		seller.setName("Antonio Fogaça");
+		seller.setEmail("antoniofogaca2012@gmail.com");
+		sellerDao.update(seller);
+		System.out.println("Update completed");
+      
+		
+		
 		//System.out.println(obj);
 
 
